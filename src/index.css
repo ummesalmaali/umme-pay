@@ -27,30 +27,6 @@ h5,
 h6 {
   color: #333333;
 }
-
-/* for making website responsive */
-
-@media (min-width: 1500px) {
-  .container,
-  .container-lg,
-  .container-md,
-  .container-sm,
-  .container-xl,
-  .container-xxl {
-    max-width: 1500px !important;
-  }
-}
-@media (min-width: 1400px) {
-  .container,
-  .container-lg,
-  .container-md,
-  .container-sm,
-  .container-xl,
-  .container-xxl {
-    max-width: 1400px !important;
-  }
-}
-
 /* navBar css style starts here */
 .navbar-bg {
   background-color: var(--bgcolor);
@@ -105,4 +81,250 @@ h6 {
   background-color: var(--primary-color);
   color: #fff;
   text-transform: capitalize;
+}
+/* ----------------navbar section ends   here -----------------*/
+
+/* ----------------hero section startts from here -----------------*/
+header {
+  background-color: var(--bgcolor);
+  min-height: 100vh;
+  width: 100%;
+}
+.main-hero-container {
+  height: 80vh;
+  display: flex;
+}
+.main-hero-container h1 {
+  text-transform: capitalize;
+  font-weight: bolder;
+}
+.main-hero-para {
+  font-size: 1.5rem;
+  color: var(--text-color);
+  margin: 1rem 0 2rem 0;
+  width: 75%;
+}
+.main-hero-container h3 {
+  font-weight: lighter;
+}
+/* button with input group */
+.input-group {
+  position: relative !important;
+}
+.form-control-text {
+  position: absolute !important;
+  height: 5rem;
+  border: none;
+  outline-style: none;
+  outline: none;
+  padding-left: 1.5rem !important;
+  font-size: 1.4rem;
+  font-weight: lighter;
+}
+/* -------------right side of hero section------------- */
+.input-group-button {
+  position: absolute !important;
+  right: 26%;
+  top: 0.5rem;
+  color: #fff;
+  background-color: var(--primary-color);
+  height: 4rem;
+  width: 15%;
+  border-radius: 2rem !important;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -ms-border-radius: 2rem;
+  -o-border-radius: 2rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4rem;
+}
+.input-group-button:hover {
+  border: 0.1rem solid green;
+  background-color: transparent;
+  color: green;
+  box-shadow: 0 0.2rem 0.5rem;
+}
+
+.main-hero-section-images {
+  position: relative;
+}
+.main-hero-section-images img {
+  width: 60%;
+  height: 75%;
+  margin-top: 10rem;
+  box-shadow: 0 0.8rem 0.8rem rgba(0, 0, 0, 0.25);
+  border-radius: 1.5rem;
+  -webkit-border-radius: 1.5rem;
+  -moz-border-radius: 1.5rem;
+  -ms-border-radius: 1.5rem;
+  -o-border-radius: 1.5rem;
+  position: absolute;
+}
+.main-hero-section-images .main-hero-section-img2 {
+  position: absolute;
+  width: 50%;
+  height: 30%;
+  left: 55%;
+  top: -2%;
+  box-shadow: 0.8 0 0.8rem rgba(0, 0, 0, 0.25);
+}
+
+/* ----------------work  section starts   here -----------------*/
+.work-container {
+  width: 80vw;
+  height: 50vh;
+  padding: 5rem;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
+  margin-top: -10rem;
+  background-color: #fff;
+  border-radius: 0.5rem;
+}
+.work-container .main-heading {
+  font-size: 3rem;
+  font-weight: bolder;
+  margin-bottom: 4rem;
+  word-spacing: 1rem;
+}
+.work-container-subdiv {
+  padding: 0 0.6rem;
+}
+.work-container .sub-heading {
+  font-size: 2rem;
+}
+.fontawesomeStyle {
+  font-size: 2.3rem;
+  color: var(--primary-color);
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  background-color: var(--bgcolor);
+  display: grid;
+  align-items: center;
+  margin: 2rem auto;
+}
+
+/* -------------------about us section starts from here------------- */
+.common-section {
+  margin: 5rem 0;
+}
+.our-services img {
+  width: 40%;
+  height: 60%;
+  margin-top: 10rem;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.8rem 0.8rem;
+  border-radius: 1.5rem;
+  -webkit-border-radius: 1.5rem;
+  -moz-border-radius: 1.5rem;
+  -ms-border-radius: 1.5rem;
+  -o-border-radius: 1.5rem;
+}
+.our-services .mini-title {
+  text-transform: uppercase;
+  font-weight: normal;
+  margin: 3rem 0;
+  text-align: left;
+  font-size: 1.5rem;
+}
+.our-services .main-heading {
+  font-weight: bolder;
+}
+.our-services-info {
+  margin-top: 1rem;
+}
+.our-services .our-services-number {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  border: 0.1rem solid var(--primary-color);
+  background-color: var(--bgcolor);
+  display: grid;
+  place-items: center;
+}
+
+/*//////////////////////////// our services second part ///////////////////////// */
+.our-services-rightside {
+  margin-top: 10rem;
+}
+.our-services-data {
+  padding-left: 2rem;
+}
+.second-part-data {
+  padding-left: 14rem;
+}
+
+/* -------------------about us section ends from here------------- */
+
+/* /////////////////////..... services section starts from here/////////////////////////
+//////////////////////////////////////////////////////////////////////////////////// */
+.service-main-container {
+  margin-top: 6rem;
+  padding: 5rem 0;
+}
+.service-main-container .main-heading {
+  margin: 3rem 0;
+}
+.work-container-subdiv {
+  box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.26);
+  padding: 0 3rem;
+}
+.work-container-subdiv .main-hero-para {
+  width: 100%;
+}
+.work-container-subdiv:hover {
+  background-color: var(--bgcolor);
+  cursor: pointer;
+}
+.work-container-subdiv:hover > .fontawesome-style {
+  background-color: #fff;
+}
+.service-main-container .fontawesomeStyle {
+  text-align: left;
+  margin: 2rem 0;
+  place-items: center;
+}
+/* /////////////////////..... services section ends here...../////////////////////////
+//////////////////////////////////////////////////////////////////////////////////// */
+
+/* for making website responsive */
+@media (min-width: 1400px) {
+  .service-container .col-xxl-4 {
+    flex: 0 0 auto;
+    width: 30% !important;
+    margin: auto;
+  }
+}
+@media (min-width: 992px) {
+  .service-container .col-lg-4 {
+    flex: 0 0 auto;
+    width: 30% !important;
+    margin: 2.5rem auto;
+  }
+}
+
+@media (min-width: 1500px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    max-width: 1500px !important;
+  }
+}
+@media (min-width: 1400px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    max-width: 1400px !important;
+  }
 }
