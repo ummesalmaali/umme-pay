@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
   return (
@@ -6,7 +7,7 @@ const NavBar = () => {
       <section className="navbar-bg">
         <nav className="navbar navbar-expand-lg navbar-light">
           <div className="container">
-            <a href className="navbar-brand">
+            <a href="/" className="navbar-brand">
               UmmePay
             </a>
             <button
@@ -26,29 +27,41 @@ const NavBar = () => {
             >
               <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li className="nav-item">
-                  <a href className="nav-link active" aria-current="page">
+                  <Link to="/" className="nav-link active" aria-current="page">
                     Home
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a href className="nav-link active" aria-current="page">
+                  <Link
+                    to="/service"
+                    className="nav-link active"
+                    aria-current="page"
+                  >
                     Services
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a href className="nav-link active" aria-current="page">
+                  <Link
+                    to="/about"
+                    className="nav-link active"
+                    aria-current="page"
+                  >
                     About
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a href className="nav-link active" aria-current="page">
+                  <Link
+                    to="/blog"
+                    className="nav-link active"
+                    aria-current="page"
+                  >
                     Blog
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link active" href>
+                  <Link className="nav-link active" to="/contact">
                     Contact
-                  </a>
+                  </Link>
                 </li>
               </ul>
               <form className="d-flex">

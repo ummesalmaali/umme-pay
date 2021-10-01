@@ -1,19 +1,25 @@
 import "./App.css";
-import About from "./components/About";
-import Header from "./components/Header";
-import HowWorks from "./components/HowWorks";
-import NavBar from "./components/NavBar";
-import Services from "./components/Services";
+import { Route, Switch } from "react-router-dom";
+
+// router//
+
+import Home from "./Home";
+import About from "./pages/About";
+import ContactForm from "./components/ContactForm";
+import Service from "./pages/Service";
+import Error from "./pages/Error";
 
 function App() {
   return (
-    <div>
-      <NavBar />
-      <Header />
-      <HowWorks />
-      <About />
-      <Services />
-    </div>
+    <>
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route path="/about" component={About} />
+        <Route path="/contact" component={ContactForm} />
+        <Route path="/service" component={Service} />
+        <Route path="*" component={Error} />
+      </Switch>
+    </>
   );
 }
 

@@ -19,6 +19,9 @@ a {
   text-decoration: none;
   color: #fff;
 }
+ul li {
+  list-style: none;
+}
 h1,
 h2,
 h3,
@@ -175,10 +178,10 @@ header {
 /* ----------------work  section starts   here -----------------*/
 .work-container {
   width: 80vw;
-  height: 50vh;
+
   padding: 5rem;
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
-  margin-top: -10rem;
+  margin-top: -22rem;
   background-color: #fff;
   border-radius: 0.5rem;
 }
@@ -189,7 +192,8 @@ header {
   word-spacing: 1rem;
 }
 .work-container-subdiv {
-  padding: 0 0.6rem;
+  width: 30%;
+  margin: 0 auto;
 }
 .work-container .sub-heading {
   font-size: 2rem;
@@ -208,6 +212,26 @@ header {
   display: grid;
   align-items: center;
   margin: 2rem auto;
+  place-items: center;
+}
+.work-container-subdiv {
+  box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.26);
+  padding: 0 3rem;
+}
+.work-container-subdiv .main-hero-para {
+  width: 100%;
+}
+.work-container-subdiv:hover {
+  background-color: var(--bgcolor);
+  cursor: pointer;
+}
+.work-container-subdiv:hover > .fontawesomeStyle {
+  background-color: #fff;
+}
+.service-main-container .fontawesomeStyle {
+  text-align: left;
+  margin: 2rem 0;
+  place-items: center;
 }
 
 /* -------------------about us section starts from here------------- */
@@ -270,30 +294,88 @@ header {
 .service-main-container .main-heading {
   margin: 3rem 0;
 }
-.work-container-subdiv {
-  box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.26);
-  padding: 0 3rem;
-}
-.work-container-subdiv .main-hero-para {
-  width: 100%;
-}
-.work-container-subdiv:hover {
-  background-color: var(--bgcolor);
-  cursor: pointer;
-}
-.work-container-subdiv:hover > .fontawesome-style {
-  background-color: #fff;
-}
-.service-main-container .fontawesomeStyle {
-  text-align: left;
-  margin: 2rem 0;
-  place-items: center;
-}
+
 /* /////////////////////..... services section ends here...../////////////////////////
 //////////////////////////////////////////////////////////////////////////////////// */
+/* /////////////////////..... contact us  section ends here...../////////////////////////
+//////////////////////////////////////////////////////////////////////////////////// */
+.contactus-section {
+  margin: 15rem 0;
+}
+.contact-leftside img {
+  min-width: 80%;
+  max-height: 30rem;
+  height: auto;
+}
+.contact-input-field {
+  margin-bottom: 4rem;
+}
+.form-control {
+  border: 1px solid #ced4da;
+  -webkit-appearance: none;
+  height: 5rem;
+  border-radius: 0.5rem;
+  font-size: 1.6rem;
+  padding-left: 1rem;
+  font-weight: lighter;
+}
+.contact-rightside form .form-check-input {
+  width: 2rem;
+  height: 2rem;
+  margin-top: 1.5rem;
+  margin-right: 1rem;
+}
+.form-checkbox-style {
+  margin: 4rem 0;
+}
+footer {
+  padding: 5rem 0;
+  background-color: #182334;
+}
+footer h2 {
+  color: #fff;
+}
+footer li {
+  list-style: none;
+  font-size: 1.5rem;
+  font-weight: lighter;
+  color: #fff;
+  cursor: pointer;
+  margin: 1rem 0;
+}
+footer li:hover {
+  color: var(--primary-color);
+}
+
+footer .fontawesomeStyle {
+  font-size: 2.3rem;
+  color: var(--primary-color);
+  background-color: transparent;
+  width: 0rem;
+  height: 0rem;
+  margin: 2rem 0;
+  cursor: pointer;
+}
+footer .fontawesomeStyle:hover {
+  transition: all 1s;
+  animation: rotatefont 1s linear infinite alternate-reverse;
+  color: #fff;
+  -webkit-animation: rotatefont 1s linear infinite alternate-reverse;
+}
+@keyframes rotatefont {
+  0% {
+    transform: scale(0.6);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+footer .main-hero-para {
+  margin: 0;
+}
 
 /* for making website responsive */
-@media (min-width: 1400px) {
+@media (min-width: 1500px) {
   .service-container .col-xxl-4 {
     flex: 0 0 auto;
     width: 30% !important;
