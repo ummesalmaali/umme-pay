@@ -150,17 +150,16 @@ const ContactForm = () => {
                         />
                       </div>
                     </div>
-                    <div class="form-check form-checkbox-style">
+                    <div className="form-check form-checkbox-style">
                       <input
-                        class="form-check-input"
+                        className="form-check-input"
                         type="checkbox"
                         value=""
                         id="flexCheckChecked"
                       />
                       <label
-                        class="form-check-label"
-                        for="flexCheckChecked"
-                        className="main-hero-para "
+                        htmlFor="flexCheckChecked"
+                        className="form-check-label main-hero-para "
                       >
                         I agree that the UmmePay may contact me at the email
                         address or phone number above

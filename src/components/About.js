@@ -1,9 +1,6 @@
-import React, { useState } from "react";
 import howToUseApp from "../API/Usage";
 
 const About = () => {
-  const [usage, setUsage] = useState(howToUseApp);
-  console.log(howToUseApp);
   return (
     <div>
       <section className="common-section our-services">
@@ -22,18 +19,16 @@ const About = () => {
                 --AVAILABLE @ GOOGLE AND IOS APP STORE ONLY
               </h3>
               <h1 className="main-heading mt-5">How to use the App?</h1>
-              {usage.map((curElem) => {
+              {howToUseApp.map((curElem) => {
                 const { id, title, info } = curElem;
                 return (
-                  <>
-                    <div className="row our-services-info">
-                      <div className="col-1 our-services-number">{id}</div>
-                      <div className="col-10 our-services-data">
-                        <h2>{title}</h2>
-                        <p className="main-hero-para">{info}</p>
-                      </div>
+                  <div className="row our-services-info" key={id}>
+                    <div className="col-1 our-services-number">{id}</div>
+                    <div className="col-10 our-services-data">
+                      <h2>{title}</h2>
+                      <p className="main-hero-para">{info}</p>
                     </div>
-                  </>
+                  </div>
                 );
               })}
 
@@ -53,18 +48,16 @@ const About = () => {
               <h1 className="main-heading">
                 World Class Support is <br /> Available 24/7
               </h1>
-              {usage.map((curElem) => {
+              {howToUseApp.map((curElem) => {
                 const { id, title, info } = curElem;
                 return (
-                  <>
-                    <div className="row our-services-info">
-                      <div className="col-1 our-services-number">{id}</div>
-                      <div className="col-10 our-services-data">
-                        <h2>{title}</h2>
-                        <p className="main-hero-para">{info}</p>
-                      </div>
+                  <div className="row our-services-info" key={id}>
+                    <div className="col-1 our-services-number">{id}</div>
+                    <div className="col-10 our-services-data">
+                      <h2>{title}</h2>
+                      <p className="main-hero-para">{info}</p>
                     </div>
-                  </>
+                  </div>
                 );
               })}
 

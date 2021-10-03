@@ -191,10 +191,10 @@ header {
   margin-bottom: 4rem;
   word-spacing: 1rem;
 }
-.work-container-subdiv {
+/* .work-container-subdiv {
   width: 30%;
   margin: 0 auto;
-}
+} */
 .work-container .sub-heading {
   font-size: 2rem;
 }
